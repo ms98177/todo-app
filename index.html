@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TODO app</title>
+  <!-- Including CSS & JS in this file for ease of demoing-->
+  <style type="text/css">
+  <link rel="stylesheet" href="styles/main.css">
+  </style>
+</head>
+<body>
+  <h1>TODO app</h1>
+  <p>They're all different.</p>
+
+  <div id="list-container"></div>
+
+  <div id="parent"></div>
+
+
+
+  <form name="task">
+  <fieldset>
+    <legend>Person</legend>
+
+      <input type="radio" name="person" value="Jeremy" checked> Jeremy<br>
+      <input type="radio" name="person" value="Rosa"> Rosa<br>
+      <input type="radio" name="person" value="Raquel"> Raquel<br>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Task Information</legend>
+    <label> Task Difficulty:
+      <!-- drop down selector -->
+      <select name="difficulty">
+        <option value="easy">easy</option>
+        <option value="regular">regular</option>
+        <option value="hard">hard</option>
+      </select>
+    </label>
+    <label> Task Description:
+      <input type="text" name="description">
+    </label>
+  </fieldset>
+    <input type="submit" value="Make Task">
+  </form>
+
+<script src="js/scripts.js">
+
+</script>
+</body>
+</html>
